@@ -1,1 +1,1 @@
-CollabX is a real-time collaborative whiteboard and voice chat server built with Node.js, Express, and Socket.IO. Supports multi-room sessions, live canvas synchronization, object updates, cursor tracking, and undo/redo history management. Includes WebRTC signaling for peer-to-peer voice communication and efficient state broadcasting, enabling seamless teamwork, drawing, and interactive collaboration across connected users globally securely.
+
