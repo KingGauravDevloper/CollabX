@@ -125,7 +125,7 @@ CollabX helps understand:
 ## 👤 Author
 
 **King Gaurav**
-Aspiring Software Developer focused on:
+Aspiring Software Developer:
 
 
 ---
