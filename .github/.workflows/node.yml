@@ -1,11 +1,11 @@
-name: Node.js CI
+name: CI/CD Deploy to Render
 
 on:
   push:
     branches: ["main"]
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,8 +22,8 @@ jobs:
           cd server
           npm install
 
-      - name: Start server test
+      - name: Trigger Render Deploy
         run: |
-          cd server
-          node server.js &
-          sleep 5
+          curl "$RENDER_DEPLOY_HOOK"
+        env:
+          RENDER_DEPLOY_HOOK: ${{ secrets.RENDER_DEPLOY_HOOK }}
